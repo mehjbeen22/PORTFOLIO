@@ -46,8 +46,21 @@
 
       /* ------------ PROJECT CASE STYLING ------------------  */
 
+      .main {
+        background-color: #18181b;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main > h1 {
+        font-size: 4rem;
+        border-bottom: 2px solid #fff;
+        display: inline;
+        margin-bottom: 1rem;
+      }
       .container {
-        border: 2px solid;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -55,13 +68,22 @@
       }
       .project-case {
         display: flex;
-        border: solid blue;
+        border-radius: 1rem;
         width: 70%;
+        height: 16rem;
         margin: 15px;
+        border: 1px solid #fff;
+        transition: transform 0.3s ease-in-out,
+          background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+
+      .project-case:hover {
+        transform: scale(1.05);
+        background-color: #f5f5f4;
+        color: black;
       }
       .img-box {
-        border: 2px solid teal;
-        height: 17rem;
+        border-right: 10px solid #fff;
         flex-basis: 30%;
         padding: 10px;
       }
@@ -72,17 +94,40 @@
         object-fit: cover;
       }
       .contents-case {
-        background-color: pink;
+        /* background-color: pink; */
         flex-basis: 70%;
         padding: 20px;
-        line-height: 2rem;
+        line-height: 1.6rem;
       }
 
-      h2 {
-        font-size: 2rem;
+      .container > h1 {
+        margin: 1rem;
+        border-inline: solid #fff;
+        padding: 10px;
       }
-      p{
-        font-size: 1.5rem;
+      p {
+        margin-top: 1.2rem;
+        font-size: 20px;
+      }
+
+      button {
+        margin-top: 1.5rem;
+        padding: 10px;
+        border: none;
+        border-radius: 1rem;
+        transition: background-color 0.3s ease;
+        background-color: orangered;
+      }
+
+      button > a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #fff;
+      }
+
+      button:hover {
+        background-color: #f05c26;
+        box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
       }
     </style>
   </head>
