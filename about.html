@@ -53,6 +53,7 @@
         color: #fff;
       }
 
+      /* --------- LEFT CASE STYLING ----------  */
       .profile-image {
         border: 10px solid #fff;
         height: 20rem;
@@ -68,24 +69,38 @@
         text-align: justify;
       }
 
-      .left-case > h1{
-        font-size: 3rem;
+      .left-case > h1,
+      .right-case > h1 {
+        font-size: 3.5rem;
       }
       .left-case,
       .right-case {
         flex-basis: 50%;
-        border: solid red;
-      }
-
-      .left-case {
         display: flex;
         flex-direction: column;
         padding: 2rem;
         align-items: center;
       }
 
+      .left-case {
+        border-right: 10px SOLID #fff;
+      }
+
+      /* ----------- RIGHT CASE STYLING ------------  */
+
+      .langauage-case {
+        border: solid pink;
+        margin-top: 3rem;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
       .lg-img {
-        height: 2rem;
+        width: 90%;
+        height: 14rem;
+        margin: 10px;
+        border-radius: 50%;
+        background-color: #fff;
       }
     </style>
   </head>
@@ -124,12 +139,14 @@
 
       <div class="right-case">
         <h1>Language Known</h1>
-        <img class="lg-img" src="./images/html.png" alt="" />
-        <img class="lg-img" src="./images/css.png" alt="" />
-        <img class="lg-img" src="./images/js.png" alt="" />
-        <img class="lg-img" src="./images/react.jpg" alt="" />
-        <img class="lg-img" src="./images/python.png" alt="" />
-        <img class="lg-img" src="./images/c.png" alt="" />
+        <div class="langauage-case">
+          <img class="lg-img" src="./images/html.png" alt="" />
+          <img class="lg-img" src="./images/css.png" alt="" />
+          <img class="lg-img" src="./images/js.png" alt="" />
+          <img class="lg-img" src="./images/react.jpg" alt="" />
+          <img class="lg-img" src="./images/python.png" alt="" />
+          <img class="lg-img" src="./images/c.png" alt="" />
+        </div>
       </div>
     </main>
   </body>
