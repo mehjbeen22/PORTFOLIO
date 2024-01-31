@@ -44,9 +44,75 @@
         box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
       }
 
-      .react {
-        border: 2px solid red;
+      /* ----------------- CONTACT BOX STYLING ----------- */
+      input::placeholder,
+      textarea::placeholder {
+        font-size: 1.3rem;
       }
+      .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .main {
+        height: 100vh;
+        background-color: #18181b;
+        color: #fff;
+      }
+      .contact-box {
+        width: 40%;
+        border: solid;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      img {
+        height: 13rem;
+        border-radius: 50%;
+        padding: 10px;
+        border: 5px solid #fff;
+        box-shadow: rgba(251, 251, 252, 0.2) 0px 7px 20px 20px;
+      }
+      p {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 5px;
+        outline: none;
+        font-size: 1.2rem;
+      }
+      textarea {
+        height: 8rem;
+      }
+
+      button {
+        padding: 10px;
+        width: 30%;
+        font-size: 1.2rem;
+        background-color: orangered;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+      }
+
+      button:hover {
+        background-color: #f05c26;
+        box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
+      }
+
+      .icon-case {
+        border: solid;
+        width: 40%;
+      }
+
+
+      
     </style>
   </head>
   <body>
@@ -56,5 +122,28 @@
       <a href="./projects.html" class="nav-link">Projects</a>
       <a href="./contact.html" class="nav-link">Contact</a>
     </nav>
+
+    <main class="main flex">
+      <div class="contact-box">
+        <h1>Connect Me</h1>
+        <img
+          src="https://ventasoftware.com/wp-content/uploads/2023/08/Hijab-Dp.jpg"
+          alt=""
+        />
+        <p>
+          Have a question or want to work together? <br />Leave your details and
+          I'll get back to you as soon as possible.
+        </p>
+
+        <form action="" class="flex">
+          <input type="text" placeholder="Name " />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Type Your Message here !"></textarea>
+        </form>
+        <button>Submit</button>
+      </div>
+
+      <div class="icon-case"></div>
+    </main>
   </body>
 </html>
