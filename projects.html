@@ -44,17 +44,45 @@
         box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
       }
 
+      /* ------------ PROJECT CASE STYLING ------------------  */
+
       .container {
         border: 2px solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
       .project-case {
         display: flex;
         border: solid blue;
+        width: 70%;
+        margin: 15px;
       }
+      .img-box {
+        border: 2px solid teal;
+        height: 17rem;
+        flex-basis: 30%;
+        padding: 10px;
+      }
+
       .image {
-        height: 300px;
-        width: 350px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
+      }
+      .contents-case {
+        background-color: pink;
+        flex-basis: 70%;
+        padding: 20px;
+        line-height: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+      p{
+        font-size: 1.5rem;
       }
     </style>
   </head>
@@ -72,9 +100,12 @@
       <!-- --------------------------REACT PROJECTS---------------------------------------- -->
 
       <div class="react container">
+        <h1>REACT PROJECTS</h1>
         <!-- React Project  1 -->
         <div class="project-case">
-          <img class="image" src="./images/netflix-react.png" alt="" />
+          <div class="img-box">
+            <img class="image" src="./images/netflix-react.png" alt="" />
+          </div>
 
           <div class="contents-case">
             <h2>About Project</h2>
@@ -94,7 +125,9 @@
 
         <!-- React Project  2 -->
         <div class="project-case">
-          <img class="image" src="./images/emoji-react.png" alt="" />
+          <div class="img-box">
+            <img class="image" src="./images/emoji-react.png" alt="" />
+          </div>
           <div class="contents-case">
             <h2>About Project</h2>
             <p>
@@ -115,7 +148,9 @@
 
         <!-- React Project  3 -->
         <div class="project-case">
-          <img class="image" src="./images/login-react.png" alt="" />
+          <div class="img-box">
+            <img class="image" src="./images/login-react.png" alt="" />
+          </div>
           <div class="contents-case">
             <h2>About Project</h2>
             <p>
@@ -132,11 +167,15 @@
           </div>
         </div>
       </div>
+
       <!-- --------------------------JAVASCRIPT PROJECTS---------------------------------------- -->
       <div class="javascript container">
+        <h1>JAVA SCRIPT PROJECTS</h1>
         <!-- JAVASCRIPT  Project  1 -->
         <div class="project-case">
-          <img class="image" src="./images/calculator-js.png" alt="" />
+          <div class="img-box">
+            <img class="image" src="./images/calculator-js.png" alt="" />
+          </div>
           <div class="contents-case">
             <h2>About Project</h2>
             <p>
@@ -152,7 +191,130 @@
             </button>
           </div>
         </div>
+
+        <!-- JAVASCRIPT  Project  2 -->
+        <div class="project-case">
+          <div class="img-box">
+            <img class="image" src="./images/birthday-js.png" alt="" />
+          </div>
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              "Lucky Date Checker" is a Vanilla JavaScript web app. Users input
+              their birthdate and lucky number. The app checks if the birthdate
+              digit sum is divisible by the lucky number, determining luckiness.
+              It's a simple, educational project showcasing web development
+              fundamentals.
+            </p>
+
+            <button>
+              <a href="https://qrnj2j-1234.csb.app/" target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- JAVASCRIPT  Project  3 -->
+        <div class="project-case">
+          <div class="img-box">
+            <img class="image" src="./images/stock-js.png" alt="" />
+          </div>
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              StockProfit : Empower your stock trading decisions with this
+              interactive web app! Calculate profit/loss percentages using
+              initial and current stock prices. Crafted with JavaScript and
+              vibrant CSS animations. An engaging project for financial
+              enthusiasts and JavaScript learners. 📈💰🎉
+            </p>
+
+            <button>
+              <a
+                href="https://mehjbeen22.github.io/Stock-Price/"
+                target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
       </div>
+
+      <!-- -------------------------- HTML /CSS PROJECTS -------------->
+      <div class="html container">
+        <h1>HTML / CSS PROJECTSS</h1>
+        <!-- HTML  project 1 -->
+        <div class="project-case">
+          <div class="img-box">
+            <img class="image" src="./images/mcdonald-html.png" alt="" />
+          </div>
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              This project is a personal, non-commercial, and educational
+              endeavor, designed purely to demonstrate my skills as a front-end
+              web developer. It is not an official McDonald's webpage.
+            </p>
+
+            <button>
+              <a
+                href="https://mehjbeen22.github.io/McDonald-s-Webpage/"
+                target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- HTML  project 2 -->
+        <div class="project-case">
+          <div class="img-box">
+            <img class="image" src="./images/dice-html.png" alt="" />
+          </div>
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              Created an exciting two-player dice game where players compete to
+              achieve the highest score. Implemented captivating sound effects
+              to enhance the gameplay experience. Utilized JavaScript to handle
+              game logic and scoring mechanisms.
+            </p>
+
+            <button>
+              <a href="https://mehjbeen22.github.io/Dice-Game/" target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- HTML  project 3 -->
+        <div class="project-case">
+          <div class="img-box">
+            <img class="image" src="./images/portfolio-html.png" alt="" />
+          </div>
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              Designed a professional portfolio with a sleek and modern user
+              interface. - Showcased skills, experiences, and accomplishments in
+              an engaging and organized manner. Utilized HTML and CSS to create
+              an aesthetically pleasing and interactive portfolio.
+            </p>
+
+            <button>
+              <a
+                href="https://mehjbeen22.github.io/Portfolio-Project/"
+                target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---------------------------------------------------------  -->
     </main>
   </body>
 </html>
