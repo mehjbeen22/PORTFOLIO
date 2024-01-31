@@ -36,6 +36,7 @@
         padding: 2px;
         color: #fff;
         width: 10%;
+        font-weight: bold;
       }
       .nav-link:hover {
         border-radius: 5px;
@@ -43,26 +44,63 @@
         box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
       }
 
-      img {
-        height: 8rem;
+      /* ----------- ----------------------------------- */
+
+      .main {
+        display: flex;
+        height: 100vh;
+        background-color: #000;
+        color: #fff;
+      }
+
+      .profile-image {
+        border: 10px solid #fff;
+        height: 20rem;
+        border-radius: 50%;
+        padding: 15px;
+        box-shadow: rgba(251, 251, 252, 0.2) 30px 7px 29px 29px;
+      }
+
+      .about-me {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+        line-height: 1.7rem;
+        text-align: justify;
+      }
+      .left-case,
+      .right-case {
+        flex-basis: 50%;
+        border: solid red;
+      }
+
+      .left-case {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        align-items: center;
+      }
+
+      .lg-img {
+        height: 2rem;
       }
     </style>
   </head>
   <body>
     <nav class="navbar">
       <a href="./index.html" class="nav-link">Home</a>
-      <a href="" class="nav-link">About</a>
+      <a href="./about.html" class="nav-link">About</a>
       <a href="" class="nav-link">Projects</a>
       <a href="" class="nav-link">Contact</a>
     </nav>
 
-    <main>
+    <main class="main">
       <div class="left-case">
         <img
-          src="https://1.bp.blogspot.com/-JjG6CiLrdKA/YTRqTrWzvNI/AAAAAAAAkqc/Dohdn-8YhkYZ2LQ0UmhrcljN9ejr4KLfgCLcBGAsYHQ/s1209/Hijab%2BGirls%2BDP%2Bfor%2BWhatsapp%2BProfile%2B%252810%2529.jpg"
+          class="profile-image"
+          src="https://dpwishes.com/wp-content/uploads/2023/11/cartoon-girl-attitude-dp.jpg"
           alt=""
         />
-        <p>
+        <p class="about-me">
           I am a passionate frontend developer currently enrolled in a one-year
           self-paced program at Navgurukul. Throughout this journey, I have
           immersed myself in the world of web development, mastering essential
@@ -80,12 +118,13 @@
       </div>
 
       <div class="right-case">
-        <img src="./images/html.png" alt="" />
-        <img src="./images/css.png" alt="" />
-        <img src="./images/js.png" alt="" />
-        <img src="./images/react.jpg" alt="" />
-        <img src="./images/python.png" alt="" />
-        <img src="./images/c.png" alt="" />
+        <h1>Language Known</h1>
+        <img class="lg-img" src="./images/html.png" alt="" />
+        <img class="lg-img" src="./images/css.png" alt="" />
+        <img class="lg-img" src="./images/js.png" alt="" />
+        <img class="lg-img" src="./images/react.jpg" alt="" />
+        <img class="lg-img" src="./images/python.png" alt="" />
+        <img class="lg-img" src="./images/c.png" alt="" />
       </div>
     </main>
   </body>
