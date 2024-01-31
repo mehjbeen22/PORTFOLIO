@@ -22,7 +22,7 @@
 
       /* ------- NAVBAR STYLING ------- */
       .navbar {
-        background-color: black;
+        background-color: #18181b;
         height: 5rem;
         display: flex;
         justify-content: center;
@@ -49,7 +49,7 @@
       .main {
         display: flex;
         height: 100vh;
-        background-color: #000;
+        background-color: #18181b;
         color: #fff;
       }
 
@@ -89,7 +89,7 @@
       /* ----------- RIGHT CASE STYLING ------------  */
 
       .langauage-case {
-        border: solid pink;
+        /* border: solid pink; */
         margin-top: 3rem;
         width: auto;
         display: grid;
@@ -97,10 +97,20 @@
       }
       .lg-img {
         width: 90%;
-        height: 14rem;
-        margin: 10px;
+        height: 10rem;
+        margin-block: 30px;
+        margin-inline: 10px;
         border-radius: 50%;
-        background-color: #fff;
+        padding: 10px;
+        border-bottom: 7px solid #fff;
+        border-right: 6px solid #fff;
+      }
+
+      .lg-img:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+          rgba(250, 248, 248, 0.3) 30px 30px 60px -30px;
+
+        cursor: pointer;
       }
     </style>
   </head>
