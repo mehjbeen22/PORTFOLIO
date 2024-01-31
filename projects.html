@@ -43,6 +43,19 @@
         border: 1px solid #fff;
         box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
       }
+
+      .container {
+        border: 2px solid;
+      }
+      .project-case {
+        display: flex;
+        border: solid blue;
+      }
+      .image {
+        height: 300px;
+        width: 350px;
+        object-fit: cover;
+      }
     </style>
   </head>
   <body>
@@ -52,5 +65,94 @@
       <a href="./projects.html" class="nav-link">Projects</a>
       <a href="./contact.html" class="nav-link">Contact</a>
     </nav>
+
+    <main class="main">
+      <h1>My Projects</h1>
+
+      <!-- --------------------------REACT PROJECTS---------------------------------------- -->
+
+      <div class="react container">
+        <!-- React Project  1 -->
+        <div class="project-case">
+          <img class="image" src="./images/netflix-react.png" alt="" />
+
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              I created a cool Netflix-style webpage using React. It's a website
+              First page that shows Login page of Netflix . This project proves
+              that I can make awesome and user-friendly websites.
+            </p>
+
+            <button>
+              <a href="https://netflixwebpageclone.netlify.app/" target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- React Project  2 -->
+        <div class="project-case">
+          <img class="image" src="./images/emoji-react.png" alt="" />
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              The Emoji Interpreter project is a dynamic web application built
+              using React that allows users to understand the meanings behind
+              various emojis. The primary features of the application include an
+              input box where users can either type an emoji or click on an
+              emoji icon to retrieve its meaning.
+            </p>
+
+            <button>
+              <a href="https://hqkqq9.csb.app/" target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- React Project  3 -->
+        <div class="project-case">
+          <img class="image" src="./images/login-react.png" alt="" />
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              I made a login/signup page is a user authentication interface
+              built using the React framework. It employs modern React features
+              to enhance user experience and manage state efficiently.
+            </p>
+
+            <button>
+              <a href="https://loginsignuppage22.netlify.app/" target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------JAVASCRIPT PROJECTS---------------------------------------- -->
+      <div class="javascript container">
+        <!-- JAVASCRIPT  Project  1 -->
+        <div class="project-case">
+          <img class="image" src="./images/calculator-js.png" alt="" />
+          <div class="contents-case">
+            <h2>About Project</h2>
+            <p>
+              Developed a fully functional calculator application using
+              JavaScript. Enabled users to perform mathematical calculations
+              accurately and efficiently.
+            </p>
+
+            <button>
+              <a href="https://mehjbeen22.github.io/Calculator/" target="_blank"
+                >View Live Project</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
