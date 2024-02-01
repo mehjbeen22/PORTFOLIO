@@ -28,6 +28,7 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        border-bottom: 1px solid #fff;
       }
       .nav-link {
         text-align: center;
@@ -56,17 +57,23 @@
         align-items: center;
       }
       .main {
-        height: 100vh;
+        /* height: 100vh; */
         background-color: #18181b;
         color: #fff;
       }
       .contact-box {
         width: 40%;
-        border: solid;
         padding: 1rem;
         text-align: center;
+        margin-top: 3rem;
+        transition: transform 0.3s ease-in-out,
+          background-color 0.3s ease-in-out, color 0.3s ease-in-out;
       }
 
+      .contact-box:hover {
+        transform: scale(1.01);
+        box-shadow: rgba(250, 249, 249, 0.2) 16px 39px 39px 16px;
+      }
       .pic {
         height: 13rem;
         border-radius: 50%;
@@ -123,6 +130,32 @@
         border: 1px solid;
         padding: 5px;
         box-shadow: rgba(250, 249, 249, 0.2) 10px 10px 10px 6px;
+      }
+
+      /* ------------------ MEDIA QUERY ------------------ */
+      @media screen and (max-width: 1000px) {
+        .navbar {
+          align-items: center;
+          gap: 1rem;
+        }
+
+        .nav-link {
+          width: auto;
+        }
+
+        .main {
+          align-items: center;
+        }
+
+        .contact-box {
+          margin-top: 50px;
+          width: 80%;
+          max-width: 600px; /* Set a maximum width to avoid content overflowing */
+        }
+
+        .pic {
+          height: 8rem; /* Adjust the profile pic size */
+        }
       }
     </style>
   </head>
