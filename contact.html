@@ -103,12 +103,26 @@
 
       button:hover {
         background-color: #f05c26;
-        box-shadow: rgba(250, 249, 249, 0.2) 30px 7px 29px 6px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
       }
 
       .icon-case {
-        border: solid;
-        width: 40%;
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .icons {
+        height: 3.5rem;
+        width: 12%;
+        border-radius: 5px;
+      }
+
+      .icons:hover {
+        border: 1px solid;
+        padding: 5px;
+        box-shadow: rgba(250, 249, 249, 0.2) 10px 10px 10px 6px;
       }
     </style>
   </head>
@@ -139,14 +153,41 @@
           <textarea placeholder="Type Your Message here !"></textarea>
         </form>
         <button>Submit</button>
-      </div>
 
-      <div class="icon-case">
-        <img src="https://i.ibb.co/4tccBPZ/whatsapp.jpg" alt="whatsapp" />
-        <img src="https://i.ibb.co/47Mv0cb/email.jpg" alt="email" />
-        <img src="https://i.ibb.co/47Mv0cb/email.jpg" alt="linkedin" />
-        <img src="https://i.ibb.co/MMy9nhg/codechef.jpg" alt="codechef" />
-        <img src="https://i.ibb.co/T1cdmm3/github.jpg" alt="github" />
+        <!-- ------------------------------ -->
+
+        <div class="icon-case">
+          <img
+            class="icons"
+            src="https://i.ibb.co/sK4mgp6/whatsapp-256x256.png"
+            alt="whatsapp"
+          />
+          <img
+            class="icons"
+            src="https://i.ibb.co/m9PpcwF/gmail-256x256.png"
+            alt="email"
+          />
+          <img
+            class="icons"
+            src="https://i.ibb.co/dP3QgfJ/linkedin-original-256x256.png"
+            alt="linkedin"
+          />
+          <img
+            class="icons"
+            src="https://i.ibb.co/H2cLF0W/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
+          />
+          <img
+            class="icons"
+            src="https://i.ibb.co/NSFg6sM/github-desktop-256x256.png"
+            alt="github"
+          />
+
+          <img
+            class="icons"
+            src="https://i.ibb.co/NY6d8Qx/instagram-256x256.png"
+            alt="instagram"
+          />
+        </div>
       </div>
     </main>
   </body>
